@@ -33,3 +33,6 @@ Run the game with the shim:
 
 This isn't heavily tested. There may be other functions missing I have
 not yet stumbled up on.
+
+## Related links
+- See [sc3u-NPTL](https://github.com/twolife/sc3u-nptl) for a way to run the old native Linux version of *SimCity™ 3000 Unlimited* on modern systems.
