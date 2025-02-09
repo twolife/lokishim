@@ -4,6 +4,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define UNUSED __attribute__((__unused__))
+
 void *__builtin_new(size_t size)
 {
     return malloc(size);
@@ -24,13 +26,13 @@ void __builtin_vec_delete(void *ptr)
     free(ptr);
 }
 
-void *set_new_handler__FPFv_v(void *f)
+void *set_new_handler__FPFv_v(UNUSED void *f)
 {
     return 0;
 }
 
 /* Placement new */
-void *__nw__FUiPv(int size, void *p)
+void *__nw__FUiPv(UNUSED int size, void *p)
 {
     return p;
 }
